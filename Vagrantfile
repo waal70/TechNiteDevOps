@@ -1,5 +1,3 @@
-#vagrant plugin install vagrant-vbguest
-#vagrant plugin uninstall vagrant-vbguest
 VAGRANTFILE_API_VERSION = "2" 
 
 project_name = "TechNiteDevOps"
@@ -19,7 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	  puppet.environment_path     = "environments"
 	  puppet.environment          = "development"
 	  puppet.manifests_path       = "manifests"
-      puppet.manifest_file        = "default.pp"
-	  #bogus logfile
+      puppet.manifest_file        = "site.pp"
+	  #bogus-line logfile
 	end 
 end 
