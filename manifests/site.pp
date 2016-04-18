@@ -1,3 +1,8 @@
+ node default {
+   include groups
+   include users
+ }
+
 group { 'awaal':
   			  ensure => 'present',
   			  gid    => '1001',
