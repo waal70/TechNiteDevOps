@@ -1,8 +1,10 @@
+#exec { "apt-get update":
+#  path => "/usr/bin",
+#}
 group { 'awaal':
   			  ensure => 'present',
   			  gid    => '1001',
      }
-
 package { "apache2":
   ensure  => present,
   require => Exec["apt-get update"],
