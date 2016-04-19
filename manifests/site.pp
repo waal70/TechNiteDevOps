@@ -7,7 +7,7 @@ group { 'awaal':
 
   user { 'awaal':
     ensure             => present,
-    comment  	       => 'Andre de Waal',
+    comment  	       => 'Andre de Waal wijziging',
     password           => '$1$8FbWib7X$Fz9HM7sjC326pC3fmUxZu0',
     managehome         => true,
     groups             => 'awaal',
