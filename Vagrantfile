@@ -4,7 +4,7 @@ project_name = "TechNiteDevOps"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config| 
 	config.vm.box = "dev-awaal" 
-	config.vm.network "forwarded_port", guest: 80, host:3000, protocol: "tcp"
+	#config.vm.network "forwarded_port", guest: 80, host:3000, protocol: "tcp"
 	
 	config.vm.provider "virtualbox" do |v| 
 		v.customize ["modifyvm", :id, "--cpus", "2"] 
