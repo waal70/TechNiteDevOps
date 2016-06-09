@@ -9,6 +9,8 @@ Way of working:
 
 Cleaning up
 Run inside machine prepvagrant.sh
-vboxmanage modifyhd --compact <disk file>.vdi
 vboxmanage clonehd <disk>.vmdk <disk>.vdi --format VDI
-en dan modifyhd
+vboxmanage modifyhd --compact <disk file>.vdi
+del <disk>.vmdk
+vboxmanage clonehd <disk>.vdi <disk>.vmdk --format VMDK
+del <disk>.vdi
