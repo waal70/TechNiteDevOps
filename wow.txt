@@ -1,0 +1,14 @@
+Way of working:
+
+1. vagrant add file:///E://VagrantSource//<boxname>.box --name <boxname>
+2. vagrant init <boxname>
+3. change config:    config.vm.box_check_update = false
+					config.ssh.insert_key = false
+4. vagrant up
+
+
+Cleaning up
+Run inside machine prepvagrant.sh
+vboxmanage modifyhd --compact <disk file>.vdi
+vboxmanage clonehd <disk>.vmdk <disk>.vdi --format VDI
+en dan modifyhd
